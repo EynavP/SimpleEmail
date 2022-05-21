@@ -4,4 +4,138 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003">
+
+        <ImageView
+            android:id="@+id/IvEmailLogo"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/email_logo2">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/TvPrimaryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/primary"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/LLEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LLTop">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RVMailList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp" />
+        </ScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Ivseperation_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/seperation_line"
+        app:layout_constraintBottom_toTopOf="@+id/LLEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/LLEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/LLmail"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="100dp">
+
+        <ImageView
+            android:id="@+id/Ivmail_icon"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/mail_icon">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/TvMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/mail"
+            android:gravity="center"
+            android:textSize="16sp">
+        </TextView>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LLAddmail"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="120dp">
+
+        <ImageView
+            android:id="@+id/IvAdd_mail_icon"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="@drawable/add_mail_icon">
+        </ImageView>
+        <TextView
+            android:id="@+id/TvANewMail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Add"
+            android:gravity="center"
+            android:textSize="16sp">
+        </TextView>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

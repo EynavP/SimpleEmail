@@ -6,4 +6,8 @@
     <string name="details">details</string>
     <string name="to_me">to me</string>
     <string name="content">Content</string>
+    <string name="primary">PRIMARY</string>
+    <string name="mail">Mail</string>
+    <string name="Add">New</string>
+
 </resources>
