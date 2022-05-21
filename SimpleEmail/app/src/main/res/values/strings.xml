@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SimpleEmail</string>
+    <string name="time">time</string>
+    <string name="sender">sender</string>
+    <string name="subject">subject</string>
+    <string name="details">details</string>
 </resources>
