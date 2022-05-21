@@ -17,6 +17,6 @@
         tools:layout="@layout/activity_email_details"
         android:name="com.example.simpleemail.DetailsFragment"
         android:layout_weight="2"
-        android:id="@+id/detailsFragment"/>
+        android:id="@+id/detailsFragment2"/>
 
 </LinearLayout>

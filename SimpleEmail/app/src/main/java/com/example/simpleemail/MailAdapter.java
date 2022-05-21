@@ -1,17 +1,11 @@
 package com.example.simpleemail;
 
-import android.content.Context;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
@@ -52,11 +46,11 @@ public class MailAdapter extends BaseAdapter {
 
         Mail mail = Mails.get(position);
 
-        holder.TV_mail_title.setText(mail.getMail_title());
+   //     holder.TV_mail_title.setText(mail.getMail_title());
         holder.Tv_first_letter.setText(mail.getFirst_letter());
         holder.Tv_sender_value.setText(mail.getSender());
         holder.Tv_time_value.setText(mail.getTime());
-        holder.mail_content.setText(mail.getContent());
+//        holder.mail_content.setText(mail.getContent());
 
         return convertView;
     }
