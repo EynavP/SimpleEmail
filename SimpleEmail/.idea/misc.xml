@@ -9,10 +9,23 @@
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_details.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_email_details.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+<<<<<<< Updated upstream
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_new_email.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/mail_fragment.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/mail_object.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/User/Desktop/ComputerScience/SimpleEmail/SimpleEmail/app/src/main/res/layout/test.xml" value="0.11302083333333333" />
+=======
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/drawable/seperation_line.xml" value="0.176" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout-land/activity_main.xml" value="0.2625" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_email_details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/details.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/details_fragment.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/mail_fragment.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/mail_object.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/main_fragment.xml" value="0.11302083333333333" />
+        <entry key="..\:/Users/koral/Desktop/Android_course/SimpleEmail/SimpleEmail/SimpleEmail/app/src/main/res/layout/test.xml" value="0.11302083333333333" />
+>>>>>>> Stashed changes
       </map>
     </option>
   </component>

@@ -19,7 +19,7 @@ public class Mail implements Serializable {
         this.mail_title = mail_title;
         this.first_letter = sender.charAt(0)+"";
         this.sender = sender;
-        this.time = new SimpleDateFormat("yyyyMMdd_HHmmss").format(Calendar.getInstance().getTime());
+        this.time = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
         this.content = content;
     }
 
