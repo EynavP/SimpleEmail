@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:layout="@layout/activity_email_details"
-    android:id="@+id/detailsFragment"
-    android:name="com.example.simpleemail.DetailsFragment"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent" />
-
