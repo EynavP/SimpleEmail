@@ -21,6 +21,7 @@ public class MailAdpater extends RecyclerView.Adapter<MailAdpater.ViewHolder> {
     public MailAdpater(List<Mail> mails, Context context) {
         this.mails = mails;
         this.layoutInflater = LayoutInflater.from(context);
+        this.clickInterface = (MainActivity)context;
     }
 
     @NonNull
@@ -70,7 +71,6 @@ public class MailAdpater extends RecyclerView.Adapter<MailAdpater.ViewHolder> {
                     int position= getAdapterPosition();
                     if(position!=RecyclerView.NO_POSITION){
                         clickInterface.OnItemClick(position);
-                        Intent intent=new Intent()
                     }
                 }
             });

@@ -22,8 +22,8 @@
             android:id="@+id/IvEmailLogo"
             android:layout_width="100dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/email_logo2">
 
         </ImageView>
@@ -32,7 +32,8 @@
             android:id="@+id/TvPrimaryTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="15dp"
             android:text="@string/primary"
             android:textStyle="bold">
 
@@ -44,7 +45,7 @@
         android:layout_width="408dp"
         android:layout_height="552dp"
         android:orientation="vertical"
-        android:paddingTop="10dp"
+        android:paddingTop="5dp"
         app:layout_constraintBottom_toTopOf="@+id/LLEnd"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
