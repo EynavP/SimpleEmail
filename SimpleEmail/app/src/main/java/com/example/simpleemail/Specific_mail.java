@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -61,6 +62,8 @@ public class Specific_mail extends AppCompatActivity {
             if(TVReplay.getText().toString()!=null){
                 db.replayDao().insertReplay(new Replay(mail.getId(),TVReplay.getText().toString()));
                 Toast.makeText(this,"Add replay Success",Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(this,MainActivity.class);
+                startActivity(intent);
             }
         });
 
