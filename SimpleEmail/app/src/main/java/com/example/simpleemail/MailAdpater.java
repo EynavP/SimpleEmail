@@ -74,6 +74,17 @@ public class MailAdpater extends RecyclerView.Adapter<MailAdpater.ViewHolder> {
                     }
                 }
             });
+
+            viewItem.setOnLongClickListener(view -> {
+
+                if(clickInterface!=null){
+                    int position= getAdapterPosition();
+                    if(position!=RecyclerView.NO_POSITION){
+                        clickInterface.OnItemLongClick(position);
+                    }
+                }
+                return true;
+            });
         }
     }
 }

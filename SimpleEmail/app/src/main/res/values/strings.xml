@@ -9,10 +9,9 @@
     <string name="primary">PRIMARY</string>
     <string name="mail">Mail</string>
     <string name="Add">New</string>
-    <string name="from_me">From: Me</string>
     <string name="send">Send</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="please_reply_this_mail">Please Reply this Mail</string>
+    <string name="from">From</string>
 
 </resources>

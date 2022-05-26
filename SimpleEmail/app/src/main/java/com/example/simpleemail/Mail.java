@@ -22,15 +22,17 @@ public class Mail implements Serializable {
     List<String> Reply;
     String first_letter;
     String sender;
+    String to;
     String time;
     String content;
 
 
 
-    public Mail(String mail_title, String sender, String content) {
+    public Mail(String mail_title, String sender,String to, String content) {
         this.mail_title = mail_title;
         this.first_letter = sender.charAt(0)+"";
         this.sender = sender;
+        this.to = to;
         this.time = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
         this.content = content;
         this.Reply=new ArrayList<>();
@@ -82,4 +84,7 @@ public class Mail implements Serializable {
         this.Reply.add(replay);
     }
 
+    public String getTo() { return to; }
+
+    public void setTo(String to) { this.to = to; }
 }
