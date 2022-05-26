@@ -1,18 +1,30 @@
 package com.example.simpleemail;
 
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+import androidx.room.TypeConverter;
+import androidx.room.TypeConverters;
+
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.List;
 
-
+@Entity
 public class Mail implements Serializable {
 
+    @PrimaryKey(autoGenerate = true)
+    private int id;
     String mail_title;
+    @TypeConverters(Converters.class)
+    List<String> Reply;
     String first_letter;
     String sender;
     String time;
     String content;
+
 
 
     public Mail(String mail_title, String sender, String content) {
@@ -21,6 +33,7 @@ public class Mail implements Serializable {
         this.sender = sender;
         this.time = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
         this.content = content;
+        this.Reply=new ArrayList<>();
     }
 
     public String getMail_title() {
@@ -47,11 +60,9 @@ public class Mail implements Serializable {
         this.sender = sender;
     }
 
-
     public String getTime() {
         return time;
     }
-
 
     public String getContent() {
         return content;
@@ -60,4 +71,15 @@ public class Mail implements Serializable {
     public void setContent(String content) {
         this.content = content;
     }
+
+    public int getId() {return id;}
+
+    public void setId(int id) {this.id = id;}
+
+    public List<String> getReply() {return Reply;}
+
+    public void addReplay(String replay){
+        this.Reply.add(replay);
+    }
+
 }

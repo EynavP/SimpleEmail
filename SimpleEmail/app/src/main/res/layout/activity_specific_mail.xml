@@ -112,12 +112,6 @@
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
-            <ImageView
-                android:id="@+id/replay_btn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_weight="1"
-                android:src="@drawable/ic_replay" />
         </LinearLayout>
 
     </LinearLayout>
@@ -143,6 +137,55 @@
             android:textColor="@color/black"
             android:textSize="15sp" />
     </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ReplayListlayout"
+        android:layout_width="398dp"
+        android:layout_height="400dp"
+        app:layout_constraintBottom_toTopOf="@+id/ReplayLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_contentRL">
+
+        <ListView
+            android:id="@+id/LVreplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ReplayLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/BtnReplay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_replay"
+            android:background="@color/white">
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/TVReplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/please_reply_this_mail"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp">
+
+        </TextView>
+
+
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

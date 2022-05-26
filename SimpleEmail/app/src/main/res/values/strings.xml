@@ -13,5 +13,6 @@
     <string name="send">Send</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_reply_this_mail">Please Reply this Mail</string>
 
 </resources>

@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements ClickInterface  {
     }
 
     private void GetMails() {
-        mails.add(new Mail("First Message","Eynav","Hello, wolcome to your mail"));
+        mails.add(new Mail("First Message","Eynav","Hello, welcome to your mail"));
     }
 
 
