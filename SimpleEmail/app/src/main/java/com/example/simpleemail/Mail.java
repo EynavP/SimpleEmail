@@ -18,8 +18,6 @@ public class Mail implements Serializable {
     @PrimaryKey(autoGenerate = true)
     private int id;
     String mail_title;
-    @TypeConverters(Converters.class)
-    List<String> Reply;
     String first_letter;
     String sender;
     String to;
@@ -35,7 +33,6 @@ public class Mail implements Serializable {
         this.to = to;
         this.time = new SimpleDateFormat("dd/MM/yyyy").format(Calendar.getInstance().getTime());
         this.content = content;
-        this.Reply=new ArrayList<>();
     }
 
     public String getMail_title() {
@@ -78,11 +75,6 @@ public class Mail implements Serializable {
 
     public void setId(int id) {this.id = id;}
 
-    public List<String> getReply() {return Reply;}
-
-    public void addReplay(String replay){
-        this.Reply.add(replay);
-    }
 
     public String getTo() { return to; }
 

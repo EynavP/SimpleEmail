@@ -16,9 +16,6 @@ public interface MailDao {
     @Query("SELECT * FROM Mail WHERE id = :id")
     Mail get(int id);
 
-    @Query("SELECT Reply FROM Mail WHERE id = :id")
-    List<String> getAllReplay(int id);
-
     @Insert
     void insertMail(Mail...mails);
 

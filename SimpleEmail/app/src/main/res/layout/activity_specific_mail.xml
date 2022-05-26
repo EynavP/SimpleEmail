@@ -138,22 +138,30 @@
             android:textSize="15sp" />
     </RelativeLayout>
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:id="@+id/ReplayListlayout"
-        android:layout_width="398dp"
+        android:layout_width="match_parent"
         android:layout_height="400dp"
         app:layout_constraintBottom_toTopOf="@+id/ReplayLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mail_contentRL">
 
-        <ListView
-            android:id="@+id/LVreplay"
+        <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-        </ListView>
 
-    </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/RvReplays_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+        </ScrollView>
+
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/ReplayLayout"
