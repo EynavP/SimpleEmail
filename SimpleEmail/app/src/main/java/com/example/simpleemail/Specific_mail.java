@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Specific_mail extends AppCompatActivity {
 
     Mail mail;
-    TextView mail_title,first_letter,sender_value,time_value,mail_content,TVReplay;
+    TextView mail_title,first_letter,sender_value,time_value,mail_content;
+    EditText TVReplay;
     ImageView backBtn;
     ImageButton BtnReplay;
     @Override
@@ -41,6 +44,7 @@ public class Specific_mail extends AppCompatActivity {
         BtnReplay.setOnClickListener(view->{
             if(TVReplay.getText().toString()!=null)
                 mail.addReplay(TVReplay.getText().toString());
+            Toast.makeText(this,"hello",Toast.LENGTH_LONG).show();
         });
 
 
